@@ -1,6 +1,6 @@
 /// @progress to obj_action
 // You can write your code in this editor
-global.floorrng = choose(FloorEvents.Chest,FloorEvents.Skeleton,FloorEvents.PitfallTrap);
+global.floorrng = choose(FloorEvents.Chest,FloorEvents.Skeleton,FloorEvents.PitfallTrap,FloorEvents.Bomb);
 counter++;
 
 if (global.floorrng == FloorEvents.Chest) {
@@ -23,6 +23,21 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 }
+
+else if (global.floorrng == FloorEvents.Bomb) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
+else if (global.floorrng == FloorEvents.Bomb) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
 
 if (counter == 2){
 instance_destroy(self);

@@ -8,7 +8,7 @@ global.line3 = "3.Leave the chest."; //chance
 global.line4 = ""; 
 //setchance of fail ( 1 = 10% )
 global.chance1 = 9;
-global.chance2 = 4;
+global.chance2 = 6;
 global.chance3 = 0;
 //etc
 instance_create_depth(149,800,2,obj_act1);
@@ -50,3 +50,18 @@ instance_create_depth(576,800,2,obj_act3);
 }
 
 
+else if (global.floorrng == FloorEvents.Bomb){
+//event
+global.line1 = "1.Find the located smell."; //chance - 100%
+global.line2 = "2.Run!"; //chance - 50% 50%
+global.line3 = "3.Throw a rock to check for traps."; //chance - 100% -1hp
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 0;
+global.chance2 = 5;
+global.chance3 = 0;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}

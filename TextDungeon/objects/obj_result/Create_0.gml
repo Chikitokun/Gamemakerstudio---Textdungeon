@@ -316,3 +316,190 @@ global.rnglimit -= global.chance1;
         global.playerhp--;
     }
 }
+
+
+//result of floorevent Bomb ---------------------------------------------------------------------------------------
+ 
+if(global.floorrng == FloorEvents.Bomb && global.act = 1){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You search the source of the smell"; 
+            global.line2 = "You found the bomb and disarm it"; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+            global.playerhp++;
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = ""; 
+    }
+}
+
+else if(global.floorrng == FloorEvents.Bomb && global.act = 2){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "You run as fast as you can"; 
+            global.line2 = "The bomb explode behind you"; 
+            global.line3 = "-2hp"; 
+            global.line4 = ""; 
+            global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You run as fast as you can"; 
+            global.line2 = "You hear the explosion"; 
+            global.line3 = "Way far behind you"; 
+            global.line4 = "You survive the explosion"; 
+            global.playerhp++;
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = ""; 
+    }
+}
+
+else if(global.floorrng == FloorEvents.Bomb && global.act = 3){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = "You throw a rock and do nothing."; 
+        global.line2 = "The Bomb explode"; 
+        global.line3 = "What could you expect?"; 
+        global.line4 = "-2hp"; 
+    }
+}
+
+
+
+//result of floorevent Bomb ---------------------------------------------------------------------------------------
+ 
+if(global.floorrng == FloorEvents.Bomb && global.act = 1){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You search the source of the smell"; 
+            global.line2 = "You found the bomb and disarm it"; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+            global.playerhp++;
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = ""; 
+    }
+}
+
+else if(global.floorrng == FloorEvents.Bomb && global.act = 2){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "You run as fast as you can"; 
+            global.line2 = "The bomb explode behind you"; 
+            global.line3 = "-2hp"; 
+            global.line4 = ""; 
+            global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You run as fast as you can"; 
+            global.line2 = "You hear the explosion"; 
+            global.line3 = "Way far behind you"; 
+            global.line4 = "You survive the explosion"; 
+            global.playerhp++;
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = ""; 
+    }
+}
+
+else if(global.floorrng == FloorEvents.Bomb && global.act = 3){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = "You throw a rock and do nothing."; 
+        global.line2 = "The Bomb explode"; 
+        global.line3 = "What could you expect?"; 
+        global.line4 = "-2hp"; 
+    }
+}

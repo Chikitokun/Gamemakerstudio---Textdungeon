@@ -16,4 +16,4 @@ global.line4 = "";
 
 counter = 0;
 
-enum FloorEvents{ Chest,Skeleton,PitfallTrap,Bomb,MimicTrap,PoisonDartTrap,Sarcophagus,ThePuzzleDoor,GuillotineCorridor,TheFireTrap,ThePoisonSmoke,TheSpikeTrap,   }
+enum FloorEvents{ Chest,Skeleton,PitfallTrap,Bomb,MimicChestTrap,PoisonDartTrap,Sarcophagus,ThePuzzleDoor,GuillotineCorridor,TheFireTrap,ThePoisonSmoke,TheSpikeTrap,TheRiddleMaster,ABowlOfApples,}

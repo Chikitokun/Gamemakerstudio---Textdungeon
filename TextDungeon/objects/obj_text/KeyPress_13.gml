@@ -31,13 +31,82 @@ global.line3 = "";
 global.line4 = "";
 }
 
-else if (global.floorrng == FloorEvents.Bomb) {
+else if (global.floorrng == FloorEvents.MimicChestTrap) {
 global.line1 = "It smell like sulfur.";
 global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 }
 
+else if (global.floorrng == FloorEvents.PoisonDartTrap) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
+else if (global.floorrng == FloorEvents.Sarcophagus) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
+else if (global.floorrng == FloorEvents.ThePuzzleDoor) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
+else if (global.floorrng == FloorEvents.Sarcophagus) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
+else if (global.floorrng == FloorEvents.GuillotineCorridor) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
+else if (global.floorrng == FloorEvents.TheFireTrap) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
+else if (global.floorrng == FloorEvents.ThePoisonSmoke) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
+else if (global.floorrng == FloorEvents.TheSpikeTrap) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
+else if (global.floorrng == FloorEvents.TheRiddleMaster) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
+
+else if (global.floorrng == FloorEvents.ABowlOfApples) {
+global.line1 = "It smell like sulfur.";
+global.line2 = "";
+global.line3 = "";
+global.line4 = "";
+}
 
 if (counter == 2){
 instance_destroy(self);

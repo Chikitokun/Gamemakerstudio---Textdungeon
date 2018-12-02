@@ -65,3 +65,170 @@ instance_create_depth(149,800,2,obj_act1);
 instance_create_depth(362,800,2,obj_act2);
 instance_create_depth(576,800,2,obj_act3);
 }
+
+
+else if (global.floorrng == FloorEvents.MimicChestTrap){
+//event
+global.line1 = "1.Dont open the chest."; //chance - 100%
+global.line2 = "2.Inspect the chest"; //chance - 70% 30%
+global.line3 = "3.Open the chest."; //chance - 100% -1hp
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 0;
+global.chance2 = 3;
+global.chance3 = 0;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}
+
+
+else if (global.floorrng == FloorEvents.PoisonDartTrap){
+//event
+global.line1 = "1.Dodge the dart."; //chance - 50% 50%
+global.line2 = "2.Hide behind cover"; //chance - 100%
+global.line3 = "3.Find something to block the dart."; //chance - 30% 70%
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 5;
+global.chance2 = 0;
+global.chance3 = 7;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}
+
+
+else if (global.floorrng == FloorEvents.Sarcophagus){
+//event
+global.line1 = "1.Open the Sarcophagus."; //chance - 100%
+global.line2 = "2.Ignore the Sarcophagus"; //chance - 100%
+global.line3 = "3.Punch the Sarcophagus."; //chance - 100% -1hp
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 0;
+global.chance2 = 0;
+global.chance3 = 0;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}
+
+
+else if (global.floorrng == FloorEvents.ThePuzzleDoor){
+//event
+global.line1 = "1.Try to answer it."; //chance - 60% 40%
+global.line2 = "2.Ignore and open the door"; //chance - 100% -1hp
+global.line3 = "3.Break the door."; //chance - 100% -1hp
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 4;
+global.chance2 = 0;
+global.chance3 = 0;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}
+
+
+else if (global.floorrng == FloorEvents.GuillotineCorridor){
+//event
+global.line1 = "1.Run as fast as you can."; //chance - 100% -1hp
+global.line2 = "2.Run and dodge"; //chance - 50% 50%
+global.line3 = "3.Walk slowly and dodge."; //chance - 100% 
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 0;
+global.chance2 = 5;
+global.chance3 = 0;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}
+
+
+else if (global.floorrng == FloorEvents.TheFireTrap){
+//event
+global.line1 = "1.Dodge the fire."; //chance - 40% 70%
+global.line2 = "2.Stay low and move slowly"; //chance - 100%
+global.line3 = "3.Find an object."; //chance - 20% 80%
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 7;
+global.chance2 = 0;
+global.chance3 = 8;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}
+
+
+else if (global.floorrng == FloorEvents.ThePoisonSmoke){
+//event
+global.line1 = "1.Find something to cover your nose."; //chance - 60% 40%
+global.line2 = "2.Inhale the smoke."; //chance - 100% -1hp
+global.line3 = "3.Find another way up."; //chance - 100%
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 4;
+global.chance2 = 0;
+global.chance3 = 0;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}
+
+else if (global.floorrng == FloorEvents.TheSpikeTrap){
+//event
+global.line1 = "1.Jump over the trap."; //chance - 50% 50%
+global.line2 = "2.Try throw a rock"; //chance - 100%
+global.line3 = "3.Find a wooden plank."; //chance - 30% 70%
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 0;
+global.chance2 = 5;
+global.chance3 = 7;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}
+
+else if (global.floorrng == FloorEvents.TheRiddleMaster){
+//event
+global.line1 = "1.Answer the riddle."; //chance - 100% -1hp
+global.line2 = "2.Stay Quite."; //chance - 100% -1hp
+global.line3 = "3.Think and answer the riddle."; //chance - 100%
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 0;
+global.chance2 = 0;
+global.chance3 = 0;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}
+
+else if (global.floorrng == FloorEvents.ABowlOfApples){
+//event
+global.line1 = "1.Eat the appel."; //chance - 100%
+global.line2 = "2.Take the appel."; //chance - 100%
+global.line3 = "3.Throw The Appel."; //chance - 100% 
+global.line4 = ""; 
+//setchance of fail ( 1 = 10% )
+global.chance1 = 0;
+global.chance2 = 0;
+global.chance3 = 0;
+//etc
+instance_create_depth(149,800,2,obj_act1);
+instance_create_depth(362,800,2,obj_act2);
+instance_create_depth(576,800,2,obj_act3);
+}

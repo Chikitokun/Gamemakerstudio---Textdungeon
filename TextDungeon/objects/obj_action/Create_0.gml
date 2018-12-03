@@ -70,12 +70,12 @@ instance_create_depth(576,800,2,obj_act3);
 else if (global.floorrng == FloorEvents.MimicChestTrap){
 //event
 global.line1 = "1.Dont open the chest."; //chance - 100%
-global.line2 = "2.Inspect the chest"; //chance - 70% 30%
+global.line2 = "2.Inspect the chest"; //chance - 100% -1hp
 global.line3 = "3.Open the chest."; //chance - 100% -1hp
 global.line4 = ""; 
 //setchance of fail ( 1 = 10% )
 global.chance1 = 0;
-global.chance2 = 3;
+global.chance2 = 0;
 global.chance3 = 0;
 //etc
 instance_create_depth(149,800,2,obj_act1);
@@ -203,12 +203,12 @@ instance_create_depth(576,800,2,obj_act3);
 
 else if (global.floorrng == FloorEvents.TheRiddleMaster){
 //event
-global.line1 = "1.Answer the riddle."; //chance - 100% -1hp
+global.line1 = "1.Answer the riddle."; //chance - 40% 60%
 global.line2 = "2.Stay Quite."; //chance - 100% -1hp
 global.line3 = "3.Think and answer the riddle."; //chance - 100%
 global.line4 = ""; 
 //setchance of fail ( 1 = 10% )
-global.chance1 = 0;
+global.chance1 = 6;
 global.chance2 = 0;
 global.chance3 = 0;
 //etc

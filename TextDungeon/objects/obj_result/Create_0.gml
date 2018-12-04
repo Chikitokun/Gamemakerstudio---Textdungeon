@@ -403,7 +403,7 @@ global.rnglimit -= global.chance1;
     }
     //if event have no chance,fill here *skip if have chance
     else{    
-        global.line1 = "You throw a rock and do nothing."; 
+        global.line1 = "You threw a rock."; 
         global.line2 = "The Bomb explode"; 
         global.line3 = "What could you expect?"; 
         global.line4 = "-2hp"; 
@@ -428,18 +428,17 @@ global.rnglimit -= global.chance1;
         }
         //goodevent *skip if no chance
         if(global.rng <= global.rnglimit){
-            global.line1 = "You ignore the chest"; 
-            global.line2 = "And move on"; 
-            global.line3 = "to another floor"; 
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
             global.line4 = ""; 
-            global.playerhp++;
         }
     }
     //if event have no chance,fill here *skip if have chance
     else{    
-        global.line1 = ""; 
-        global.line2 = ""; 
-        global.line3 = ""; 
+        global.line1 = "You ignore the chest"; 
+        global.line2 = "And move on"; 
+        global.line3 = "to the next floor"; 
         global.line4 = ""; 
     }
 }
@@ -455,7 +454,6 @@ global.rnglimit -= global.chance1;
             global.line2 = ""; 
             global.line3 = ""; 
             global.line4 = ""; 
-            global.playerhp--;
         }
         //goodevent *skip if no chance
         if(global.rng <= global.rnglimit){
@@ -463,19 +461,19 @@ global.rnglimit -= global.chance1;
             global.line2 = ""; 
             global.line3 = ""; 
             global.line4 = ""; 
-            global.playerhp++;
         }
     }
     //if event have no chance,fill here *skip if have chance
     else{    
-        global.line1 = ""; 
-        global.line2 = ""; 
-        global.line3 = ""; 
-        global.line4 = ""; 
+	        global.line1 = "As you move closer,the chest suddenly opens"; 
+            global.line2 = "It's a mimic!and it bit you,you escaped his"; 
+            global.line3 = "Grasp and killed it."; 
+            global.line4 = "-1 HP";  
+            global.playerhp--;
     }
 }
 
-else if(global.floorrng == FloorEvents.Bomb && global.act = 3){
+else if(global.floorrng == FloorEvents.MimicChestTrap && global.act = 3){
 //setchance 
 global.rnglimit -= global.chance1;
     //check if event had chance
@@ -497,9 +495,192 @@ global.rnglimit -= global.chance1;
     }
     //if event have no chance,fill here *skip if have chance
     else{    
-        global.line1 = "You throw a rock and do nothing."; 
-        global.line2 = "The Bomb explode"; 
-        global.line3 = "What could you expect?"; 
-        global.line4 = "-2hp"; 
+        global.line1 = "You opened the chest,it's a mimic!it bit you!"; 
+        global.line2 = "You hit him with your knee repetitively and killed it."; 
+        global.line3 = "-1 HP"; 
+        global.line4 = ""; 
+		global.playerhp--;
+    }
+}
+
+//result of floorevent poisondartrap ---------------------------------------------------------------------------------------
+ 
+if(global.floorrng == FloorEvents.PoisonDartTrap && global.act = 1){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "The dart hits you!You failed to avoid it!"; 
+            global.line2 = "-1 HP"; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You avoided the dart successfully."; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = ""; 
+    }
+}
+
+else if(global.floorrng == FloorEvents.PoisonDartTrap && global.act = 2){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = " "; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+	        global.line1 = "You hid behind a pillar."; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = "";  
+    }
+}
+
+else if(global.floorrng == FloorEvents.PoisonDartTrap && global.act = 3){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "You can't find anything useful,the dart hits you!"; 
+            global.line2 = "-1 HP"; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You blocked the dart with a wood plank you found!"; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = ""; 
+    }
+}
+
+//result of floorevent sarcophagus ---------------------------------------------------------------------------------------
+ 
+if(global.floorrng == FloorEvents.Sarcophagus && global.act = 1){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "The dart hits you!You failed to avoid it!"; 
+            global.line2 = "-1 HP"; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You avoided the dart successfully."; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = ""; 
+    }
+}
+
+else if(global.floorrng == FloorEvents.PoisonDartTrap && global.act = 2){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = " "; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+	        global.line1 = "You hid behind a pillar."; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = "";  
+    }
+}
+
+else if(global.floorrng == FloorEvents.PoisonDartTrap && global.act = 3){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "You can't find anything useful,the dart hits you!"; 
+            global.line2 = "-1 HP"; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You blocked the dart with a wood plank you found!"; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = ""; 
     }
 }

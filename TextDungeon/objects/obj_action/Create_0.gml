@@ -120,12 +120,12 @@ instance_create_depth(576,800,2,obj_act3);
 
 else if (global.floorrng == FloorEvents.ThePuzzleDoor){
 //event
-global.line1 = "1.Try to answer it."; //chance - 60% 40%
+global.line1 = "1.Try answering randomly"; //chance - 60% 30%
 global.line2 = "2.Ignore and open the door"; //chance - 100% -1hp
 global.line3 = "3.Break the door."; //chance - 100% -1hp
 global.line4 = ""; 
 //setchance of fail ( 1 = 10% )
-global.chance1 = 4;
+global.chance1 = 3;
 global.chance2 = 0;
 global.chance3 = 0;
 //etc
@@ -139,7 +139,7 @@ else if (global.floorrng == FloorEvents.GuillotineCorridor){
 //event
 global.line1 = "1.Run as fast as you can."; //chance - 100% -1hp
 global.line2 = "2.Run and dodge"; //chance - 50% 50%
-global.line3 = "3.Walk slowly and dodge."; //chance - 100% 
+global.line3 = "3.Walk slowly and carefully."; //chance - 100% 
 global.line4 = ""; 
 //setchance of fail ( 1 = 10% )
 global.chance1 = 0;
@@ -187,13 +187,13 @@ instance_create_depth(576,800,2,obj_act3);
 
 else if (global.floorrng == FloorEvents.TheSpikeTrap){
 //event
-global.line1 = "1.Jump over the trap."; //chance - 50% 50%
-global.line2 = "2.Try throw a rock"; //chance - 100%
+global.line1 = "1.Jump over the spikes."; //chance - 50% 50%
+global.line2 = "2.Try throwing a rock"; //chance - 100%
 global.line3 = "3.Find a wooden plank."; //chance - 30% 70%
 global.line4 = ""; 
 //setchance of fail ( 1 = 10% )
-global.chance1 = 0;
-global.chance2 = 5;
+global.chance1 = 5;
+global.chance2 = 0;
 global.chance3 = 7;
 //etc
 instance_create_depth(149,800,2,obj_act1);
@@ -203,9 +203,9 @@ instance_create_depth(576,800,2,obj_act3);
 
 else if (global.floorrng == FloorEvents.TheRiddleMaster){
 //event
-global.line1 = "1.Answer the riddle."; //chance - 40% 60%
-global.line2 = "2.Stay Quite."; //chance - 100% -1hp
-global.line3 = "3.Think and answer the riddle."; //chance - 100%
+global.line1 = "1.Play with him and take it easy."; //chance - 40% 60%
+global.line2 = "2.Stay Quiet."; //chance - 100% -1hp
+global.line3 = "3.Play with him seriously."; //chance - 100%
 global.line4 = ""; 
 //setchance of fail ( 1 = 10% )
 global.chance1 = 6;
@@ -219,9 +219,9 @@ instance_create_depth(576,800,2,obj_act3);
 
 else if (global.floorrng == FloorEvents.ABowlOfApples){
 //event
-global.line1 = "1.Eat the appel."; //chance - 100%
-global.line2 = "2.Take the appel."; //chance - 100%
-global.line3 = "3.Throw The Appel."; //chance - 100% 
+global.line1 = "1.Eat the apple."; //chance - 100%
+global.line2 = "2.Take the apple."; //chance - 100%
+global.line3 = "3.Throw The Apple."; //chance - 100% 
 global.line4 = ""; 
 //setchance of fail ( 1 = 10% )
 global.chance1 = 0;

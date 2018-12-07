@@ -17,3 +17,4 @@ global.line4 = "";
 counter = 0;
 
 enum FloorEvents{ Chest,Skeleton,PitfallTrap,Bomb,MimicChestTrap,PoisonDartTrap,Sarcophagus,ThePuzzleDoor,GuillotineCorridor,TheFireTrap,ThePoisonSmoke,TheSpikeTrap,TheRiddleMaster,ABowlOfApples,}
+global.floorrng = choose(FloorEvents.Chest,FloorEvents.Skeleton,FloorEvents.PitfallTrap,FloorEvents.Bomb);

@@ -1,6 +1,5 @@
 /// @progress to obj_action
 // You can write your code in this editor
-global.floorrng = choose(FloorEvents.Chest,FloorEvents.Skeleton,FloorEvents.PitfallTrap,FloorEvents.Bomb);
 counter++;
 
 if (global.floorrng == FloorEvents.Chest) {

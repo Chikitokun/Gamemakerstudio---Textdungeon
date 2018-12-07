@@ -172,8 +172,8 @@ instance_create_depth(576,800,2,obj_act3);
 else if (global.floorrng == FloorEvents.ThePoisonSmoke){
 //event
 global.line1 = "1.Find something to cover your nose."; //chance - 60% 40%
-global.line2 = "2.Inhale the smoke."; //chance - 100% -1hp
-global.line3 = "3.Find another way up."; //chance - 100%
+global.line2 = "2.Inhale the smoke."; //chance - 100% -2hp
+global.line3 = "3.Rush your way up."; //chance - 100%
 global.line4 = ""; 
 //setchance of fail ( 1 = 10% )
 global.chance1 = 4;

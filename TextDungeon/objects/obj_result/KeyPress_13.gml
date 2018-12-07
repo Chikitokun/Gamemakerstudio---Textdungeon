@@ -3,6 +3,7 @@
 instance_destroy(self);
 global.towerfloor++;
 instance_create_depth(0,0,2,obj_mainframe);
+instance_destroy(obj_sprite);
 
 
 

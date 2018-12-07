@@ -154,14 +154,14 @@ instance_create_depth(576,800,2,obj_act3);
 
 else if (global.floorrng == FloorEvents.TheFireTrap){
 //event
-global.line1 = "1.Dodge the fire."; //chance - 40% 70%
+global.line1 = "1.Dodge the fire."; //chance - 40% 60%
 global.line2 = "2.Stay low and move slowly"; //chance - 100%
-global.line3 = "3.Find an object."; //chance - 20% 80%
+global.line3 = "3.Find an object."; //chance - 50% 50%
 global.line4 = ""; 
 //setchance of fail ( 1 = 10% )
-global.chance1 = 7;
+global.chance1 = 6;
 global.chance2 = 0;
-global.chance3 = 8;
+global.chance3 = 5;
 //etc
 instance_create_depth(149,800,2,obj_act1);
 instance_create_depth(362,800,2,obj_act2);

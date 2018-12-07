@@ -603,15 +603,15 @@ global.rnglimit -= global.chance1;
     if (global.rnglimit != 10){
         //badevent *skip if no chance
         if(global.rng >= global.rnglimit){
-            global.line1 = "The dart hits you!You failed to avoid it!"; 
-            global.line2 = "-1 HP"; 
+            global.line1 = ""; 
+            global.line2 = ""; 
             global.line3 = ""; 
             global.line4 = ""; 
 			global.playerhp--;
         }
         //goodevent *skip if no chance
         if(global.rng <= global.rnglimit){
-            global.line1 = "You avoided the dart successfully."; 
+            global.line1 = ""; 
             global.line2 = ""; 
             global.line3 = ""; 
             global.line4 = ""; 
@@ -619,14 +619,14 @@ global.rnglimit -= global.chance1;
     }
     //if event have no chance,fill here *skip if have chance
     else{    
-        global.line1 = ""; 
+        global.line1 = "You opened the sarcophagus,there's nothing inside."; 
         global.line2 = ""; 
         global.line3 = ""; 
         global.line4 = ""; 
     }
 }
 
-else if(global.floorrng == FloorEvents.PoisonDartTrap && global.act = 2){
+else if(global.floorrng == FloorEvents.Sarcophagus && global.act = 2){
 //setchance 
 global.rnglimit -= global.chance1;
     //check if event had chance
@@ -648,21 +648,54 @@ global.rnglimit -= global.chance1;
     }
     //if event have no chance,fill here *skip if have chance
     else{    
-	        global.line1 = "You hid behind a pillar."; 
-            global.line2 = ""; 
+	        global.line1 = "You ignored the sarcophagus and proceed to the"; 
+            global.line2 = "Next floor."; 
             global.line3 = ""; 
             global.line4 = "";  
     }
 }
 
-else if(global.floorrng == FloorEvents.PoisonDartTrap && global.act = 3){
+else if(global.floorrng == FloorEvents.Sarcophagus && global.act = 3){
 //setchance 
 global.rnglimit -= global.chance1;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
         if(global.rng >= global.rnglimit){
-            global.line1 = "You can't find anything useful,the dart hits you!"; 
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = "You punched the sarcophagus,hurting your own fist."; 
+        global.line2 = "-1 HP"; 
+        global.line3 = ""; 
+        global.line4 = "";
+		global.playerhp--;
+    }
+}
+
+//result of floorevent puzzle door ---------------------------------------------------------------------------------------
+ 
+if(global.floorrng == FloorEvents.ThePuzzleDoor && global.act = 1){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "You failed the puzzle,an arrow hits you."; 
             global.line2 = "-1 HP"; 
             global.line3 = ""; 
             global.line4 = ""; 
@@ -670,7 +703,192 @@ global.rnglimit -= global.chance1;
         }
         //goodevent *skip if no chance
         if(global.rng <= global.rnglimit){
-            global.line1 = "You blocked the dart with a wood plank you found!"; 
+            global.line1 = "You failed the puzzle,an arrow was shot at your"; 
+            global.line2 = "Direction,but you dodged it."; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = ""; 
+    }
+}
+
+else if(global.floorrng == FloorEvents.ThePuzzleDoor && global.act = 2){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = " "; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+	        global.line1 = "You ignored the puzzle and tried opening the"; 
+            global.line2 = "Door,only to get hit with an arrow."; 
+            global.line3 = "-1 HP"; 
+            global.line4 = "";  
+			global.playerhp--;
+    }
+}
+
+else if(global.floorrng == FloorEvents.ThePuzzleDoor && global.act = 3){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = "You tried breaking the door,until an arrow hits your leg."; 
+        global.line2 = "-1 HP"; 
+        global.line3 = ""; 
+        global.line4 = "";
+		global.playerhp--;
+    }
+}
+
+//result of floorevent guillotine corridor ---------------------------------------------------------------------------------------
+ 
+if(global.floorrng == FloorEvents.GuillotineCorridor && global.act = 1){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = "You run faster than the wind,no shit sherlock"; 
+        global.line2 = "But still your arm got a flesh wound from one of the blades"; 
+        global.line3 = "-1 HP"; 
+        global.line4 = ""; 
+		global.playerhp--;
+    }
+}
+
+else if(global.floorrng == FloorEvents.GuillotineCorridor && global.act = 2){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "You ran while dodging,testing your agility"; 
+            global.line2 = "and perception to its limit."; 
+            global.line3 = "Maybe its just bad luck but a blade grazed you."; 
+            global.line4 = "-1 HP";
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You ran and dodge at the same time,skillfully"; 
+            global.line2 = "Dodging each of the blades."; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+	        global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = "";  
+    }
+}
+
+else if(global.floorrng == FloorEvents.GuillotineCorridor && global.act = 3){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = "You moved slowly... and carefully."; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = "";
+    }
+}
+
+//result of floorevent fire trap ---------------------------------------------------------------------------------------
+ 
+if(global.floorrng == FloorEvents.TheFireTrap && global.act = 1){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "You dodged the fire,but it burned a bit of your"; 
+            global.line2 = "Clothes,hurting your body a bit."; 
+            global.line3 = "-1 HP"; 
+            global.line4 = ""; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You dodged right before the fire could hit you."; 
             global.line2 = ""; 
             global.line3 = ""; 
             global.line4 = ""; 
@@ -684,3 +902,154 @@ global.rnglimit -= global.chance1;
         global.line4 = ""; 
     }
 }
+
+else if(global.floorrng == FloorEvents.TheFireTrap && global.act = 2){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = "";
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+	        global.line1 = "You crawled under the fire,slowly."; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = "";  
+    }
+}
+
+else if(global.floorrng == FloorEvents.TheFireTrap && global.act = 3){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "You found a pillar and hid behind it,but the fire"; 
+            global.line2 = "Grazed your clothes,you took out the fire with your"; 
+            global.line3 = "Hands,hurting your hands in the process."; 
+            global.line4 = "-1 HP"; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You hid behind the pillar,fitting your body"; 
+            global.line2 = "Proportionally."; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = "";
+    }
+}
+
+//result of floorevent thepoisonsmoke ---------------------------------------------------------------------------------------
+ 
+if(global.floorrng == FloorEvents.ThePoisonSmoke && global.act = 1){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "You dodged the fire,but it burned a bit of your"; 
+            global.line2 = "Clothes,hurting your body a bit."; 
+            global.line3 = "-1 HP"; 
+            global.line4 = ""; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You dodged right before the fire could hit you."; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = ""; 
+    }
+}
+
+else if(global.floorrng == FloorEvents.TheFireTrap && global.act = 2){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = "";
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+	        global.line1 = ""; 
+            global.line2 = ""; 
+            global.line3 = ""; 
+            global.line4 = "";  
+    }
+}
+
+else if(global.floorrng == FloorEvents.TheFireTrap && global.act = 3){
+//setchance 
+global.rnglimit -= global.chance1;
+    //check if event had chance
+    if (global.rnglimit != 10){
+        //badevent *skip if no chance
+        if(global.rng >= global.rnglimit){
+            global.line1 = "You found a pillar and hid behind it,but the fire"; 
+            global.line2 = "Grazed your clothes,you took out the fire with your"; 
+            global.line3 = "Hands,hurting your hands in the process."; 
+            global.line4 = "-1 HP"; 
+			global.playerhp--;
+        }
+        //goodevent *skip if no chance
+        if(global.rng <= global.rnglimit){
+            global.line1 = "You hid behind the pillar,fitting your body"; 
+            global.line2 = "Proportionally."; 
+            global.line3 = ""; 
+            global.line4 = ""; 
+        }
+    }
+    //if event have no chance,fill here *skip if have chance
+    else{    
+        global.line1 = ""; 
+        global.line2 = ""; 
+        global.line3 = ""; 
+        global.line4 = "";
+    }
+}
+

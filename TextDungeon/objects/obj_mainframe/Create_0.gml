@@ -1,11 +1,15 @@
 /// @basic global var init and next step
-// You can write your code in this editor
+// You can write your code in this 
+
+//enum triggers
+
+enum Sprite{ Chest,Ghost,Spirit,Door,Slime,Skeleton,None }
+enum PlayerState{ Alive,Dead }
 global.act = 0;
 global.floorrng = 0;
 global.rng = 0;
 global.rnglimit = 10;
-//playerstate
-enum PlayerState{ Alive,Dead }
+global.gamesprite = Sprite.None;
 //create ui & next step
 if(global.towerfloor == 20){
 instance_create_depth(0,0,1,obj_event_tier1);

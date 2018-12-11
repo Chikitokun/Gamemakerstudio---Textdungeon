@@ -74,7 +74,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.Chest && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -105,7 +105,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.Chest && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -165,7 +165,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.Skeleton && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -196,7 +196,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.Skeleton && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -258,7 +258,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.PitfallTrap && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -288,7 +288,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.PitfallTrap && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -338,7 +338,6 @@ global.rnglimit -= global.chance1;
             global.line2 = "You found the bomb and disarm it"; 
             global.line3 = ""; 
             global.line4 = ""; 
-            global.playerhp++;
         }
     }
     //if event have no chance,fill here *skip if have chance
@@ -352,14 +351,14 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.Bomb && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
         if(global.rng >= global.rnglimit){
             global.line1 = "You run as fast as you can"; 
-            global.line2 = "The bomb explode behind you"; 
-            global.line3 = "-2hp"; 
+            global.line2 = "The bomb exploded behind you"; 
+            global.line3 = "-1 HP"; 
             global.line4 = ""; 
             global.playerhp--;
         }
@@ -369,7 +368,6 @@ global.rnglimit -= global.chance1;
             global.line2 = "You hear the explosion"; 
             global.line3 = "Way far behind you"; 
             global.line4 = "You survive the explosion"; 
-            global.playerhp++;
         }
     }
     //if event have no chance,fill here *skip if have chance
@@ -383,7 +381,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.Bomb && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -406,7 +404,8 @@ global.rnglimit -= global.chance1;
         global.line1 = "You threw a rock."; 
         global.line2 = "The Bomb explode"; 
         global.line3 = "What could you expect?"; 
-        global.line4 = "-2hp"; 
+        global.line4 = "-2 HP";
+		global.playerhp -= 2;
     }
 }
 
@@ -445,7 +444,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.MimicChestTrap && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -475,7 +474,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.MimicChestTrap && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -537,7 +536,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.PoisonDartTrap && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -566,7 +565,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.PoisonDartTrap && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -628,7 +627,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.Sarcophagus && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -657,7 +656,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.Sarcophagus && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -720,7 +719,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.ThePuzzleDoor && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -750,7 +749,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.ThePuzzleDoor && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -813,7 +812,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.GuillotineCorridor && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -843,7 +842,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.GuillotineCorridor && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -905,7 +904,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.TheFireTrap && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -934,7 +933,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.TheFireTrap && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -996,7 +995,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.ThePoisonSmoke && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -1026,7 +1025,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.ThePoisonSmoke && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -1087,7 +1086,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.TheRiddleMaster && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -1117,7 +1116,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.TheRiddleMaster && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -1179,7 +1178,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.ABowlOfApples && global.act = 2){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance2;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance
@@ -1208,7 +1207,7 @@ global.rnglimit -= global.chance1;
 
 else if(global.floorrng == FloorEvents.ABowlOfApples && global.act = 3){
 //setchance 
-global.rnglimit -= global.chance1;
+global.rnglimit -= global.chance3;
     //check if event had chance
     if (global.rnglimit != 10){
         //badevent *skip if no chance

@@ -8,7 +8,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.Chest;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170 ,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.Skeleton) {
@@ -17,7 +17,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.Skeleton;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.PitfallTrap) {
@@ -26,7 +26,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.None;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.Bomb) {
@@ -35,7 +35,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.None;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.MimicChestTrap) {
@@ -44,7 +44,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.Chest;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.PoisonDartTrap) {
@@ -53,7 +53,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.None;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.Sarcophagus) {
@@ -62,7 +62,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.None;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.ThePuzzleDoor) {
@@ -71,7 +71,7 @@ global.line2 = "It's broken...";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.Door;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.GuillotineCorridor) {
@@ -80,7 +80,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.None;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.TheFireTrap) {
@@ -89,7 +89,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.None;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.ThePoisonSmoke) {
@@ -98,7 +98,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.None;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.TheSpikeTrap) {
@@ -107,7 +107,7 @@ global.line2 = "";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.None;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.TheRiddleMaster) {
@@ -116,7 +116,7 @@ global.line2 = "It's a riddle floor.";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.None;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 else if (global.floorrng == FloorEvents.ABowlOfApples) {
@@ -125,7 +125,7 @@ global.line2 = "There's a bowl filled with apple in the pedestal";
 global.line3 = "";
 global.line4 = "";
 global.gamesprite = Sprite.None;
-instance_create_depth(170,202 ,4,obj_sprite);
+instance_create_depth(170,170,4,obj_sprite);
 }
 
 if (counter == 2){
